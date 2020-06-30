@@ -1,0 +1,22 @@
+@import "./reset.scss";
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Montserrat";
+
+  .btn {
+    border: 1px solid black;
+    padding: 0.5rem 0.5rem;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-transform: capitalize;
+    &:hover {
+      background: black;
+    }
+  }
+}
