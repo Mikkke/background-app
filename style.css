@@ -71,22 +71,195 @@ td:not([align]),
 th:not([align]) {
   text-align: left; }
 
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+ul {
+  list-style: none; }
+
+button,
+input,
+select,
+textarea {
+  margin: 0; }
+
+html {
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+img,
+video {
+  height: auto;
+  max-width: 100%; }
+
+iframe {
+  border: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0; }
+
+td:not([align]),
+th:not([align]) {
+  text-align: left; }
+
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   min-height: 100vh;
-  font-family: "Montserrat"; }
-  body .btn {
+  font-family: "Montserrat";
+  letter-spacing: 0.1rem;
+  position: relative; }
+  body nav {
+    min-height: 60px;
+    box-shadow: 5px 2px 2px black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 10px;
+    z-index: 999;
+    background-color: white;
+    font-size: 1.2rem; }
+    body nav a {
+      text-decoration: none;
+      color: black;
+      padding: 0.5rem; }
+    @media screen and (max-width: 599px) {
+      body nav {
+        color: blue;
+        background: red;
+        font-size: 0.9rem; } }
+  body .containerHex {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0;
+    flex-direction: column; }
+    body .containerHex .colorParaHex__span {
+      font-size: 1.5rem;
+      text-transform: capitalize; }
+      @media screen and (max-width: 599px) {
+        body .containerHex .colorParaHex__span {
+          font-size: 0.9rem; } }
+  body .btnHex {
+    margin: 1rem;
     border: 1px solid black;
     padding: 0.5rem 0.5rem;
     font-size: 1.2rem;
     border-radius: 10px;
     cursor: pointer;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.6);
-    text-transform: capitalize; }
+    color: black;
+    background-color: white;
+    text-transform: capitalize;
+    transition: color 400ms;
+    width: 15rem;
+    text-align: center; }
+    body .btnHex:hover {
+      background: black;
+      color: white; }
+    @media screen and (max-width: 599px) {
+      body .btnHex {
+        font-size: 0.9rem; } }
+
+body {
+  min-height: 100vh;
+  font-family: "Montserrat";
+  letter-spacing: 0.1rem;
+  position: relative; }
+  body nav {
+    min-height: 60px;
+    box-shadow: 5px 2px 2px black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    -webkit-box-shadow: -1px 4px 15px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 4px 15px -4px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 4px 15px -4px rgba(0, 0, 0, 0.75);
+    z-index: 999;
+    background-color: white;
+    font-size: 1.2rem; }
+    body nav a {
+      text-decoration: none;
+      color: black;
+      padding: 0.5rem; }
+    @media screen and (max-width: 599px) {
+      body nav {
+        font-size: 0.9rem; } }
+  body .container {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0;
+    flex-direction: column; }
+    body .container .colorPara__span {
+      font-size: 1.5rem;
+      text-transform: capitalize; }
+      @media screen and (max-width: 599px) {
+        body .container .colorPara__span {
+          font-size: 0.9rem; } }
+  body .btn {
+    margin: 1rem;
+    border: 1px solid black;
+    padding: 0.5rem 0.5rem;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    text-transform: capitalize;
+    transition: color 400ms;
+    width: 15rem;
+    text-align: center; }
     body .btn:hover {
-      background: black; }
+      background: black;
+      color: white; }
+    @media screen and (max-width: 599px) {
+      body .btn {
+        font-size: 0.9rem; } }
 
 /*# sourceMappingURL=style.css.map */
